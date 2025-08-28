@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QTROP WINNERS HUB</title>
+  <style>
+    /* General Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body, html { height: 100%; scroll-behavior: smooth; }
+
+    section {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      position: relative;
+      font-family: Impact, sans-serif;
+    }
+
+    /* Page One - LED Banner */
+    .page-one {
+      background: black;
+      color: limegreen;
+    }
+    .led-text {
+      font-size: 40px;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: scrollText 15s linear infinite;
+      text-shadow: 0 0 5px lime, 0 0 10px lime, 0 0 20px lime;
+    }
+    @keyframes scrollText {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+    /* Dollar animation */
+    .dollar {
+      position: absolute;
+      font-size: 30px;
+      color: greenyellow;
+      animation: fall 5s linear infinite;
+    }
+    @keyframes fall {
+      0% { top: -10%; opacity: 1; }
+      100% { top: 110%; opacity: 0; }
+    }
+
+    /* Page Two - Glowing Gold Text */
+    .page-two {
+      background: #111;
+    }
+    .gold-text {
+      font-size: 50px;
+      color: gold;
+      text-shadow: 0 0 10px gold, 0 0 20px orange, 0 0 30px goldenrod;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+    @keyframes glow {
+      from { text-shadow: 0 0 5px gold, 0 0 10px orange; }
+      to { text-shadow: 0 0 20px gold, 0 0 40px orange; }
+    }
+
+    /* Page Three - Winners Shine */
+    .page-three {
+      background: black;
+    }
+    .winner-text {
+      font-size: 60px;
+      font-weight: bold;
+      text-transform: uppercase;
+      background: linear-gradient(90deg, #ffffff, #bbbbbb, #ffffff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: shine 3s linear infinite;
+    }
+    @keyframes shine {
+      from { background-position: -200px; }
+      to { background-position: 200px; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Page One -->
+  <section class="page-one">
+    <div class="led-text">🚀 WELCOME TO QTROP WINNERS HUB HOME OF MATCHES 🚀</div>
+    <!-- Random Dollar Signs -->
+    <div class="dollar" style="left:10%; animation-delay:0s;">💵</div>
+    <div class="dollar" style="left:30%; animation-delay:1s;">💰</div>
+    <div class="dollar" style="left:50%; animation-delay:2s;">💵</div>
+    <div class="dollar" style="left:70%; animation-delay:3s;">💰</div>
+    <div class="dollar" style="left:90%; animation-delay:4s;">💵</div>
+  </section>
+
+  <!-- Page Two -->
+  <section class="page-two">
+    <h1 class="gold-text">TRADE LIKE A PRO WITH QTROP</h1>
+  </section>
+
+  <!-- Page Three -->
+  <section class="page-three">
+    <h1 class="winner-text">QTROP – WHERE WINNERS ARE MADE</h1>
+  </section>
+</body>
+</html>
